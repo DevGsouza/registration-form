@@ -1,0 +1,33 @@
+.terms {
+  position: relative;
+  gap: 1.5rem;
+  margin-top: 2rem;
+
+  input {
+    position: absolute;
+    width: 1.6rem;
+    height: 1.6rem;
+    opacity: 0;
+  }
+
+  .image-terms {
+    background-image: url(../components/check/squareDefault.svg);
+    flex: 0 0 1.6rem;
+    height: 1.6rem;
+
+  }
+
+  &:focus-within,
+  &:hover {
+    .image-terms {
+      background-image: url(../components/check/squareFocus.svg);
+      background-size: cover;
+    }
+  }
+
+  &:has(:checked) {
+    .image-terms {
+      background-image: url(../components/check/squareCheck.svg);
+    }
+  }
+}

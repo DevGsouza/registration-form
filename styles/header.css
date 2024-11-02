@@ -1,0 +1,19 @@
+.form {
+  header {
+    padding-top: 12rem;
+
+
+    div {
+      align-items: center;
+      gap: 8px;
+    }
+
+    h2 {
+      margin-block: 2rem;
+    }
+
+    p {
+      margin-bottom: 4rem;
+    }
+  }
+}

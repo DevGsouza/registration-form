@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Matrícula</title>
+  <link rel="stylesheet" href="./styles/index.css">
+</head>
+
+<body>
+  <div class="sections grid">
+    <section class="form container">
+      <header>
+        <div class="flex">
+          <img src="./components/icons/arrowLeft.svg" alt="seta para esquerda">
+
+          <a href="" class="heading4 text-secondary">Voltar</a>
+        </div>
+
+        <h2 class="heading2 text-primary">
+          Formulário de matrícula
+        </h2>
+
+        <p class="heading4 text-secondary">
+          Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.
+        </p>
+
+      </header>
+
+      <section class="center">
+        <form action="" id="form">
+          <fieldset>
+            <legend class="text-primary heading4 weight600">
+              Informações da Criança
+            </legend>
+            <div class="input grid">
+              <label class="text-secondary heading5" for="form">Nome Completo</label>
+              <input class="text-primary heading5 mg-32 " type="text" name="nome" id="form" placeholder="Nome" required
+                minlength="2">
+
+            </div>
+
+            <div class="input grid">
+              <label class="text-secondary heading5" for="form">Data de Nascimento</label>
+              <input class="text-primary heading5 mg-32" type="date" name="nome" id="form">
+            </div>
+
+            <div class="input grid">
+              <label class="text-secondary heading5" for="form">Sexo</label>
+              <select class="text-primary heading5" name="sexo" id="form">
+                <div></div>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+              </select>
+            </div>
+
+            <div class="input grid medical">
+              <label class="text-secondary heading5" for="form">Informações Médicas</label>
+              <textarea class="text-primary heading5" rows="5" wrap="soft" name="" id="form"
+                placeholder="Digite aqui..."></textarea>
+            </div>
+
+            <h3 class="text-secondary heading5">Certidão de Nascimento</h3>
+            <div class=" input-hover input grid file">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M34.9552 18.0221C34.97 18.022 34.985 18.022 35 18.022C39.9706 18.022 44 22.0588 44 27.0386C44 31.6796 40.5 35.5016 36 36M34.9552 18.0221C34.9848 17.6921 35 17.3579 35 17.0202C35 10.9339 30.0752 6 24 6C18.2465 6 13.5247 10.4253 13.0408 16.0638M34.9552 18.0221C34.7506 20.2952 33.8572 22.3692 32.4856 24.033M13.0408 16.0638C7.96796 16.5475 4 20.8278 4 26.0366C4 30.8834 7.43552 34.9264 12 35.8546M13.0408 16.0638C13.3565 16.0337 13.6765 16.0183 14 16.0183C16.2516 16.0183 18.3295 16.7639 20.001 18.022"
+                  stroke="#D6D3D1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M24 26V42M24 26C22.5996 26 19.9831 29.9886 19 31M24 26C25.4004 26 28.017 29.9886 29 31"
+                  stroke="#D6D3D1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+
+              <label class="text-file heading4" for="file-upload">Clique aqui para selecionar arquivos</label>
+              <input class="text-primary heading5 mg-32" type="file" name="" id="file-upload">
+            </div>
+
+          </fieldset>
+
+          <fieldset>
+            <legend class=" text-primary heading4 weight600">
+              Endereço Residencial
+            </legend>
+            <div class="input grid">
+              <label class="text-secondary heading5" for="form">CEP</label>
+              <input class="text-primary heading5 mg-32" type="text" name="nome" id="form" placeholder="Digite seu CEP">
+            </div>
+
+            <div class="input flex gap32">
+              <div class="grid width100">
+                <label class="text-secondary heading5" for="form">Cidade</label>
+                <input class="mg-32" type="text" name="nome" id="form" placeholder="Rua das Flores">
+              </div>
+
+              <div class="grid width60">
+                <label class="text-secondary heading5" for="form">Número</label>
+                <input class="mg-32" type="text" name="nome" id="form" placeholder="123">
+              </div>
+            </div>
+            <div class="input flex gap32">
+              <div class="grid width100">
+                <label class="text-secondary heading5" for="form">Cidade</label>
+                <input class="mg-32" type="text" name="nome" id="form" placeholder="São Paulo">
+              </div>
+
+              <div class="grid width60">
+                <label class="text-secondary heading5" for="form">Estado</label>
+                <input class="mg-32" type="text" name="nome" id="form" placeholder="SP">
+              </div>
+            </div>
+
+
+
+
+
+          </fieldset>
+
+          <fieldset>
+            <legend class="text-primary heading4 weight600">
+              Informações do Responsável
+            </legend>
+            <div class="input grid">
+              <label class="text-secondary heading5" for="form">Nome do Responsável</label>
+              <input class="text-primary heading5" type="text" name="nome" id="form"
+                placeholder="Digite o nome aqui...">
+              <small class="text-secondary heading6" for="form">Principal responsável legal e contato de
+                emergência</small>
+            </div>
+            <div class="input grid">
+              <label class="text-secondary heading5" for="form">Telefone</label>
+              <input class="text-primary heading5" type="number" name="nome" id="form" placeholder="(xx) xxxxx-xxxx">
+            </div>
+            <div class="input grid">
+              <label class="text-secondary heading5" for="email">E-mail</label>
+              <input class="text-primary heading5" type="email" name="nome" id="email" placeholder="seuemail@gmail.com"
+                required>
+              <div class="erro">
+                <img src="./components/check/alertCircle.svg" alt="">
+                <small class="heading6">Insira um e-mail válido</small>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="width100">
+            <legend class="text-primary heading4 weight600">
+              Opções de matrícula
+            </legend>
+
+            <label class="text-secondary heading5" for="">Selecione o turno de estudo</label>
+            <div class="radio grid width100 gap16 mt-32 mg-32">
+
+              <div class="radio-inner grid">
+                <div class="radio-image"></div>
+                <input type="radio" id="manhã" name="hour">
+                <img src="./components/elements/cloud.svg" alt="nuvem">
+                <label class="text-primary heading5" for="manhã">Manhã</label>
+              </div>
+
+              <div class="radio-inner grid">
+                <div class="radio-image"></div>
+                <input type="radio" id="tarde" name="hour">
+                <img src="./components/elements/sun.svg" alt="nuvem">
+                <label class="text-primary heading5" for="tarde">Tarde</label>
+              </div>
+            </div>
+
+            <label class="text-secondary heading5" for="">Em qual esporte voce gostaria de inscrever seu filho?</label>
+            <div class="radio grid width100 gap16 mt-32">
+              <div class="radio-inner grid">
+                <div class="radio-image"></div>
+                <input type="radio" id="futebol" name="sport">
+                <img src="./components/elements/football.svg" alt="bola de futebol">
+                <label class="text-primary heading5" for="futebol">Futebol</label>
+              </div>
+              <div class="radio-inner grid">
+                <div class="radio-image"></div>
+                <input type="radio" id="basquete" name="sport">
+                <img src="./components/elements/basketball.svg" alt="bola de basquete">
+                <label class="text-primary heading5" for="basquete">Basquete</label>
+              </div>
+              <div class="radio-inner grid">
+                <div class="radio-image"></div>
+                <input type="radio" id="natacao" name="sport">
+                <img src="./components/elements/swimming.svg" alt="natação">
+                <label class="text-primary heading5" for="natacao">Natação</label>
+              </div>
+              <div class="radio-inner grid">
+                <div class="radio-image"></div>
+                <input type="radio" id="yoga" name="sport">
+                <img src="./components/elements/yoga.svg" alt="pessoa fazendo yoga">
+                <label class="text-primary heading5" for="yoga">Yoga</label>
+              </div>
+              <div class="radio-inner grid">
+                <div class="radio-image"></div>
+                <input type="radio" id="volley" name="sport">
+                <img src="./components/elements/volleyball.svg" alt="bola de volley">
+                <label class="text-primary heading5" for="volley">Volley</label>
+              </div>
+              <div class="radio-inner grid">
+                <div class="radio-image"></div>
+                <input type="radio" id="boxe" name="sport">
+                <img src="./components/elements/boxe.svg" alt="luva de boxe">
+                <label class="text-primary heading5" for="boxe">Boxe</label>
+              </div>
+            </div>
+
+            <div class="terms flex">
+              <div class="image-terms"></div>
+              <input type="checkbox" id="terms">
+              <p class="text-primary heading5">
+                Declaro que li e concordo com os <a href="#" class="text-highlight">Termos
+                  e Condições</a> e com a <a href="#" class="text-highlight">Política de Privacidade</a> da
+                escola
+                Estrela
+                do
+                Amanhã.
+              </p>
+            </div>
+
+            <div class=" buttons mt-32">
+              <button class="shadow heading5 text-highlight weight500">Salvar Respostas</button>
+              <button class="bg-medium heading5 text-white weight500 brand-dark ">Fazer Matrícula</button>
+            </div>
+
+          </fieldset>
+
+
+
+        </form>
+      </section>
+    </section>
+
+    <section class="inscription grid">
+      <div class="content">
+        <img class="mg-32" src="./components/image/logo.svg" alt="Estrelas do Amanhã">
+        <p class="heading1 text-primary mg-32">
+          Porque cada momento de <span class="text-highlight">aprendizado</span> conta
+        </p>
+
+        <p class="heading4 text-secondary mg-32">Inscreva seu filho em nossa escola e veja-o florescer em um ambiente
+          acolhedor, seguro e estimulante.
+        </p>
+
+        <img src="./components/image/ilustration.svg" alt="imagem ilustrativa de professora dando aula">
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

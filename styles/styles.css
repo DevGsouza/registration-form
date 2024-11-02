@@ -1,0 +1,54 @@
+.shadow:hover {
+  outline: 2px solid var(--surface-secondary);
+}
+
+.bg-medium:hover {
+  background-color: var(--brand-medium);
+  border: 1px solid transparent;
+}
+
+.file:hover,
+.file:focus {
+  border: dashed 2px var(--stroke-highlight);
+  background-color: var(--surface-secondary);
+
+  & svg path {
+    stroke: var(--stroke-highlight);
+  }
+
+  & label {
+    color: var(--text-tertiary);
+  }
+}
+
+
+input:hover,
+select:hover,
+textarea:hover,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 1px solid var(--stroke-highlight);
+
+}
+
+.erro img,
+.erro small {
+  display: none;
+}
+
+input[type="email"] {
+
+  &[disabled] {
+    border: 1px solid var(--surface-disabled);
+  }
+
+  &:focus:invalid {
+    border: 1px solid #dc2626;
+  }
+}
+
+input[type="email"]:focus:invalid+.erro small,
+input[type="email"]:focus:invalid+.erro img {
+  display: inline;
+}

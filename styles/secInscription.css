@@ -1,0 +1,12 @@
+.inscription {
+  background-color: var(--surface-secondary);
+  height: 100vh;
+  padding-top: 12rem;
+  position: sticky;
+  top: 0;
+}
+
+.content {
+  width: 50rem;
+  margin-inline: auto;
+}
